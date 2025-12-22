@@ -22,3 +22,42 @@ Write a function `substringTest(str1, str2)` that returns `true` if the two stri
 substringTest("Something", "Fun");    // false
 substringTest("Something", "Home");   // true (both have "me")
 substringTest("HELLO", "bell");       // true (both have "ell")
+
+
+# **day-three - Sorted Union Kata**
+
+## Challenge
+Write a function `uniteUnique(...arrays)` that takes two or more arrays and returns a new array of unique values in the order they first appear.
+
+## Rules
+- Include all unique values from all arrays
+- Keep them in the order they first appear
+- No duplicates in the final array
+
+## Examples
+
+```javascript
+uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+// [1, 3, 2, 5, 4]
+// 1, 3, 2 from first array
+// 5, 4 are new from second array (2, 1 already seen)
+// Nothing new from third array
+
+uniteUnique([1, 2, 3], [5, 2, 1]);
+// [1, 2, 3, 5]
+```
+
+## Test Your Solution
+
+```javascript
+function uniteUnique(...arrays) {
+  // Your code here
+}
+
+// Tests
+console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]), "→ Expected: [1, 3, 2, 5, 4]");
+console.log(uniteUnique([1, 2, 3], [5, 2, 1]), "→ Expected: [1, 2, 3, 5]");
+console.log(uniteUnique([1, 2, 3], [5, 2, 1, 4], [2, 1], [6, 7, 8]), "→ Expected: [1, 2, 3, 5, 4, 6, 7, 8]");
+console.log(uniteUnique([1, 3, 2], [5, 4], [5, 6]), "→ Expected: [1, 3, 2, 5, 4, 6]");
+console.log(uniteUnique([1, 3, 2, 3], [5, 2, 1, 4], [2, 1]), "→ Expected: [1, 3, 2, 5, 4]");
+```
