@@ -76,19 +76,3 @@ rob([2, 7, 9, 3, 1]);
 // Rob house 0 (money = 2), house 2 (money = 9), and house 4 (money = 1)
 // Total: 2 + 9 + 1 = 12
 ```
-
-## Test Your Solution
-
-```javascript
-function rob(nums) {
-  // Your code here
-}
-
-// Tests
-console.log(rob([1, 2, 3, 1]), "→ Expected: 4");
-console.log(rob([2, 7, 9, 3, 1]), "→ Expected: 12");
-console.log(rob([5, 1, 1, 5]), "→ Expected: 10");
-console.log(rob([2, 1, 1, 2]), "→ Expected: 4");
-console.log(rob([1]), "→ Expected: 1");
-console.log(rob([2, 3]), "→ Expected: 3");
-```
