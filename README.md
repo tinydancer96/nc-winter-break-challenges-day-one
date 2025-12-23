@@ -51,7 +51,7 @@ uniteUnique([1, 2, 3], [5, 2, 1]);
 ```
 
 
-# House Robber Kata
+# Day-Four - House Robber Kata
 
 ## Challenge
 You're a robber planning to rob houses along a street. Each house has a certain amount of money, but you can't rob two adjacent houses (they have connected security systems that will alert the police).
