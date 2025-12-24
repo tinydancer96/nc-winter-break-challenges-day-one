@@ -76,3 +76,31 @@ rob([2, 7, 9, 3, 1]);
 // Rob house 0 (money = 2), house 2 (money = 9), and house 4 (money = 1)
 // Total: 2 + 9 + 1 = 12
 ```
+
+
+# Day-Five - Longest Common Prefix Kata
+
+## Challenge
+Write a function `longestCommonPrefix(strs)` that finds the longest common prefix string amongst an array of strings.
+
+If there is no common prefix, return an empty string `""`.
+
+## Rules
+- All strings consist of lowercase English letters
+- Return the longest prefix that ALL strings share
+- If no common prefix exists, return `""`
+
+## Examples
+
+```javascript
+longestCommonPrefix(["flower", "flow", "flight"]);
+// "fl"
+// All three words start with "fl"
+
+longestCommonPrefix(["dog", "racecar", "car"]);
+// ""
+// No common prefix among the strings
+
+longestCommonPrefix(["interspecies", "interstellar", "interstate"]);
+// "inters"
+```
