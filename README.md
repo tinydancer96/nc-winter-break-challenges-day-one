@@ -104,3 +104,85 @@ longestCommonPrefix(["dog", "racecar", "car"]);
 longestCommonPrefix(["interspecies", "interstellar", "interstate"]);
 // "inters"
 ```
+
+# Day-Six - Search and Replace Kata
+
+## Challenge
+Write a function `myReplace(str, before, after)` that performs a search and replace on a sentence, preserving the case of the first character of the original word.
+
+## Rules
+- The function will take 2 arguments the sentence, the word to find and the word to replace
+- Replace the first word with the second in the sentence
+- The first character's case must match the original word
+- Ignore the original case of the second - match it to the first instead
+- You may not use String methods `.replace()` or `.replaceAll()`
+
+## Examples
+
+```javascript
+searchReplace("Let's go to the store", "store", "shop");
+// "Let us go to the shop"
+
+searchReplace("He is Sleeping on the sofa", "Sleeping", "sitting");
+// "He is Sitting on the sofa"
+
+```
+
+
+# Day-Seven - Kebab Case Kata
+
+## Challenge
+Write a function `toKebabCase(str)` that converts any string to kebab-case format.
+
+Kebab case is all-lowercase-words-joined-by-dashes.
+
+## Rules
+- Convert all letters to lowercase
+- Replace spaces with dashes
+- Handle special characters and multiple separators
+- Remove any extra dashes (no double dashes)
+
+## Examples
+
+```javascript
+toKebabCase("Hello World");
+// "hello-world"
+
+toKebabCase("JavaScript is AWESOME");
+// "javascript-is-awesome"
+
+toKebabCase("I love pizza!");
+// "i-love-pizza"
+
+toKebabCase("camelCaseString");
+// "camel-case-string"
+```
+
+
+# Day-Eight - Largest Number Arrangement Kata
+
+## Challenge
+Write a function `largestNumber(nums)` that takes an array of non-negative integers and arranges them to form the largest possible number.
+
+Return the result as a string.
+
+## Rules
+- All input numbers are non-negative integers
+- Arrange the numbers to create the largest final value
+- Return the result as a string
+
+## Examples
+
+```javascript
+largestNumber([4, 50, 8, 145]);
+// "8504145"
+// Order: 8-50-4-145
+
+largestNumber([4, 40, 7]);
+// "7440"
+// Order: 7-4-40 (not 7-40-4)
+
+largestNumber([5, 2, 1, 9, 50, 56]);
+// "95655021"
+// Order: 9-56-5-50-2-1
+```
